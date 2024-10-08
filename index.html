@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<link rel="stylesheet" href="/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script defer src="main.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The giving Tree</title>
+    <title>The Giving Tree</title>
+    <link rel="icon" type="image/x-icon" href="/images/tree_icon.png">
 </head>
+<header>
+    <div class="hero-container">
+        <div class="hero-content">
+        <h1 class="title">The Giving Tree</h1>
+       
+    </div>
+    </div>
+</header>
 <body>
-    <h1>Giving Tree</h1>
-    <section>
-        <div class="image-container">
-            <p>Image Gallery</p>
+    <section></section>
+        <div class="donate-btn-container">
+         <a class="button" href="https://gofund.me/dc4f758c" target="_blank">Donate</a>
         </div>
     </section>
     <section>
-        <div class="donate-btn">
-            <button>Donate</button>
+        <div class="image-container">
+            
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326462/IMG_1957_iwgs85.png"></a>
+                <a class="carousel-item" href="#two!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326462/IMG_1964_pz8tla.png"></a>
+                <a class="carousel-item" href="#three!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326462/IMG_2112_zityek.png"></a>
+                <a class="carousel-item" href="#four!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326460/IMG_2565_xe544w.png"></a>
+                <a class="carousel-item" href="#five!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326459/IMG_1868_as1v0g.png"></a>
+                <a class="carousel-item" href="#six!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326459/IMG_1782_pypwrc.png"></a>
+                <a class="carousel-item" href="#seven!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326458/IMG_1871_fstwag.png"></a>
+                <a class="carousel-item" href="#eight!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326458/IMG_1786_szfiab.png"></a>
+                <a class="carousel-item" href="#nine!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326457/IMG_1898_g9jfn6.png"></a>
+                <a class="carousel-item" href="#ten!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326456/IMG_1966_boraii.png"></a>
+                <a class="carousel-item" href="#eleven!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326455/IMG_1619_ze2smc.png"></a>
+                <a class="carousel-item" href="#fifteen!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326452/IMG_2111_isykui.png"></a>
+                <a class="carousel-item" href="#tewlve!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326454/IMG_1455_hkecfb.png"></a>
+                <a class="carousel-item" href="#thirtneen!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326454/IMG_1867_khwrt9.png"></a>
+                <a class="carousel-item" href="#fourteen!"><img src="https://res.cloudinary.com/dxdoemjrb/image/upload/v1728326453/IMG_2566_bvkeep.png"></a>
+              
+              
+              </div>
         </div>
     </section>
     
+    <footer>
+    </footer>
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+            fullWidth: true, 
+            indicators: true,  
+            padding: 10,
+            duration: 200,  
+            numVisible: 3  
+        });
+    });
+    </script>
